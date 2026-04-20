@@ -7,3 +7,45 @@
 // Import needed Bootstrap Package Files
 //
 @import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+
+//
+// Custom Footer
+//
+.bp-page-footer {
+    background: #010912;
+    padding: 0;
+
+    // Hide any empty footer-section-content spacing
+    .footer-section-content {
+        display: none;
+    }
+}
+
+.mtn-footer-scene {
+    position: relative;
+    display: block;
+    line-height: 0;
+
+    .mtn-footer-mountains {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .mtn-footer-credit {
+        position: absolute;
+        bottom: 0.9rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .mtn-footer-heart {
+        color: $primary;
+    }
+}

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1440 200"
+   version="1.1"
+   id="svg94"
+   sodipodi:docname="footer-bg.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview94"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.59151485"
+     inkscape:cx="682.99215"
+     inkscape:cy="205.40482"
+     inkscape:window-width="1416"
+     inkscape:window-height="850"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg94" />
+  <defs
+     id="defs8">
+    <linearGradient
+       id="mtn-sky"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#010912"
+         id="stop1" />
+      <stop
+         offset="60%"
+         stop-color="#012a40"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#013148"
+         id="stop3" />
+    </linearGradient>
+    <radialGradient
+       id="mtn-sunburst"
+       cx="50%"
+       cy="50%"
+       r="50%">
+      <stop
+         offset="0%"
+         stop-color="#ffdd55"
+         id="stop4" />
+      <stop
+         offset="30%"
+         stop-color="#ff8800"
+         stop-opacity="0.55"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#eb3e4a"
+         stop-opacity="0"
+         id="stop6" />
+    </radialGradient>
+    <radialGradient
+       id="mtn-sunrise"
+       cx="50%"
+       cy="100%"
+       r="65%">
+      <stop
+         offset="0%"
+         stop-color="#eb3e4a"
+         stop-opacity="0.32"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#eb3e4a"
+         stop-opacity="0"
+         id="stop8" />
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect
+     width="1440"
+     height="200"
+     fill="url(#mtn-sky)"
+     id="rect8" />
+  <!-- Sunrise glow (right horizon) -->
+  <!-- Stars -->
+  <g
+     fill="white"
+     id="g37">
+    <circle
+       cx="28"
+       cy="16"
+       r="1.1"
+       opacity="0.82"
+       id="circle8" />
+    <circle
+       cx="74"
+       cy="9"
+       r="0.8"
+       opacity="0.62"
+       id="circle9" />
+    <circle
+       cx="118"
+       cy="27"
+       r="1.2"
+       opacity="0.88"
+       id="circle10" />
+    <circle
+       cx="162"
+       cy="12"
+       r="0.9"
+       opacity="0.72"
+       id="circle11" />
+    <circle
+       cx="200"
+       cy="38"
+       r="0.7"
+       opacity="0.55"
+       id="circle12" />
+    <circle
+       cx="252"
+       cy="8"
+       r="1.0"
+       opacity="0.78"
+       id="circle13" />
+    <circle
+       cx="295"
+       cy="21"
+       r="0.8"
+       opacity="0.65"
+       id="circle14" />
+    <circle
+       cx="342"
+       cy="6"
+       r="1.1"
+       opacity="0.82"
+       id="circle15" />
+    <circle
+       cx="385"
+       cy="32"
+       r="0.7"
+       opacity="0.6"
+       id="circle16" />
+    <circle
+       cx="428"
+       cy="14"
+       r="1.0"
+       opacity="0.78"
+       id="circle17" />
+    <circle
+       cx="472"
+       cy="24"
+       r="0.9"
+       opacity="0.68"
+       id="circle18" />
+    <circle
+       cx="518"
+       cy="7"
+       r="1.2"
+       opacity="0.88"
+       id="circle19" />
+    <circle
+       cx="562"
+       cy="39"
+       r="0.7"
+       opacity="0.55"
+       id="circle20" />
+    <circle
+       cx="608"
+       cy="11"
+       r="1.0"
+       opacity="0.8"
+       id="circle21" />
+    <circle
+       cx="652"
+       cy="23"
+       r="0.9"
+       opacity="0.72"
+       id="circle22" />
+    <circle
+       cx="698"
+       cy="5"
+       r="0.8"
+       opacity="0.65"
+       id="circle23" />
+    <circle
+       cx="742"
+       cy="18"
+       r="1.1"
+       opacity="0.85"
+       id="circle24" />
+    <circle
+       cx="788"
+       cy="30"
+       r="0.7"
+       opacity="0.6"
+       id="circle25" />
+    <circle
+       cx="832"
+       cy="10"
+       r="1.0"
+       opacity="0.78"
+       id="circle26" />
+    <circle
+       cx="876"
+       cy="22"
+       r="0.8"
+       opacity="0.7"
+       id="circle27" />
+    <circle
+       cx="52"
+       cy="46"
+       r="0.7"
+       opacity="0.5"
+       id="circle28" />
+    <circle
+       cx="188"
+       cy="50"
+       r="0.6"
+       opacity="0.44"
+       id="circle29" />
+    <circle
+       cx="325"
+       cy="47"
+       r="0.8"
+       opacity="0.52"
+       id="circle30" />
+    <circle
+       cx="462"
+       cy="53"
+       r="0.6"
+       opacity="0.44"
+       id="circle31" />
+    <circle
+       cx="598"
+       cy="43"
+       r="0.7"
+       opacity="0.5"
+       id="circle32" />
+    <circle
+       cx="735"
+       cy="51"
+       r="0.6"
+       opacity="0.44"
+       id="circle33" />
+    <circle
+       cx="145"
+       cy="44"
+       r="0.5"
+       opacity="0.4"
+       id="circle34" />
+    <circle
+       cx="412"
+       cy="41"
+       r="0.5"
+       opacity="0.4"
+       id="circle35" />
+    <circle
+       cx="675"
+       cy="37"
+       r="0.5"
+       opacity="0.4"
+       id="circle36" />
+    <circle
+       cx="855"
+       cy="42"
+       r="0.5"
+       opacity="0.4"
+       id="circle37" />
+  </g>
+  <!-- Crescent moon (upper left) -->
+  <g
+     transform="translate(112, 33)"
+     id="g39">
+    <circle
+       cx="0"
+       cy="0"
+       r="11"
+       fill="#d8d0bb"
+       id="circle38" />
+    <circle
+       cx="5"
+       cy="-3"
+       r="10"
+       fill="#010912"
+       id="circle39" />
+  </g>
+  <!-- Sun glow (right side) -->
+  <circle
+     cx="1220"
+     cy="150"
+     r="72"
+     fill="url(#mtn-sunburst)"
+     opacity="0.88"
+     id="circle40" />
+  <!-- Sun disc (partially rising above far mountains) -->
+  <circle
+     cx="1220"
+     cy="138"
+     r="21"
+     fill="#ffd43b"
+     opacity="0.92"
+     id="circle41" />
+  <!-- === FAR MOUNTAINS (layer 1, lightest) === -->
+  <path
+     d="m -1.1475312,168 39.5149332,-18 24.696833,7 26.67258,-17 25.684715,10 23.70896,-20 25.6847,12 23.70896,-24 25.6847,12 19.75748,-14 19.75746,12 19.75746,-22 23.70896,12 25.68471,-20 19.75747,12 19.75746,-16 23.70896,12 25.68471,-16 23.70896,12 25.68471,-8 25.6847,12 23.70896,-10 25.68471,12 23.70896,-18 23.70896,13 25.68471,-9 25.6847,12 23.70896,-13 23.70896,11 25.68471,-8 25.68471,11 23.70896,-7 25.6847,12 23.70896,-8 25.68471,10 23.70896,-7 23.70896,11 25.68471,-7 25.6847,9 23.70896,-7 23.70896,9 25.68469,-6 25.6847,8 25.6847,-6 27.6605,8 26.6725,-6 29.6362,8 29.6362,-4 34.5756,8 44.4544,-4 54.333,6 59.2724,4 79.0298,5 v 67 H -1.1475312 Z"
+     fill="#1a4d6b"
+     opacity="0.72"
+     id="path41"
+     style="opacity:0.9;stroke-width:0.993918" />
+  <!-- Snow on far mountains (highest peaks) -->
+  <!-- === MID MOUNTAINS (layer 2) === -->
+  <path
+     d="m -2.4121696,183 64.3243716,-21 32.656988,8 36.61542,-20 34.6362,10 37.605,-20 34.6362,12 36.61542,-20 37.60502,11 36.6154,-19 36.61542,12 37.60502,-18 37.60502,12 36.6154,-10 36.61542,12 35.6258,-10 36.61542,11 36.6154,9 37.60502,-10 37.60502,11 36.61541,-7 36.61541,10 37.60502,-8 37.60502,10 36.6154,-8 36.61542,10 35.6258,-8 36.61543,10 36.6154,-8 37.605,10 37.605,-8 36.6155,10 39.5842,-6 42.553,8 43.5426,-6 45.5219,10 110.8359,6 v 42 H -2.4121696 Z"
+     fill="#0b3548"
+     id="path44"
+     style="stroke-width:0.994789" />
+  <!-- Snow on mid mountains -->
+  <!-- === FOREGROUND SILHOUETTE (layer 3, darkest) === -->
+  <path
+     d="m -1.1475312,195.8406 57.2464142,-24.07098 29.610214,7.0797 33.558243,-21.2391 33.55824,9.91158 35.53226,-21.2391 33.55825,12.74346 35.53225,-19.82316 33.55824,12.74346 35.53226,-16.99128 35.53225,11.32752 35.53226,-15.57534 35.53226,12.74346 35.53226,-8.49564 35.53225,12.74346 35.53226,-8.49564 35.53226,12.74346 35.53225,-8.49564 35.53226,12.74346 35.53226,-8.49564 35.53226,11.32752 35.53225,-8.49564 35.53226,11.32752 35.53226,-8.49564 35.53225,11.32752 35.53226,-8.49564 36.51927,11.32752 36.51926,-7.0797 37.50632,9.91158 37.5063,-7.0797 37.5062,9.91158 37.5062,-8.49564 37.5063,11.32752 39.4803,-8.49564 41.4543,9.91158 43.4284,-7.0797 46.3893,9.91158 113.5058,-5.66376 V 210 H -1.1475312 Z"
+     fill="#040e17"
+     id="path47"
+     style="stroke-width:1.18218" />
+  <!-- Pine tree clusters on foreground -->
+  <!-- Left cluster (x 35-90) -->
+  <g
+     fill="#020a12"
+     id="g55"
+     transform="translate(23.124306,-25.8202)">
+    <polygon
+       points="47,191 40,179 33,191 "
+       id="polygon48" />
+    <polygon
+       points="49,194 40,185 31,194 "
+       id="polygon49" />
+    <rect
+       x="38"
+       y="194"
+       width="4"
+       height="6"
+       id="rect49" />
+    <polygon
+       points="62,188 55,176 48,188 "
+       id="polygon50" />
+    <polygon
+       points="64,191 55,182 46,191 "
+       id="polygon51" />
+    <rect
+       x="53"
+       y="191"
+       width="4"
+       height="6"
+       id="rect51" />
+    <polygon
+       points="77,192 70,180 63,192 "
+       id="polygon52" />
+    <polygon
+       points="79,195 70,186 61,195 "
+       id="polygon53" />
+    <rect
+       x="68"
+       y="195"
+       width="4"
+       height="5"
+       id="rect53" />
+    <polygon
+       points="90,187 84,177 78,187 "
+       id="polygon54" />
+    <polygon
+       points="92,190 84,182 76,190 "
+       id="polygon55" />
+    <rect
+       x="82"
+       y="190"
+       width="4"
+       height="5"
+       id="rect55" />
+  </g>
+  <g
+     fill="#020a12"
+     id="g55-6"
+     transform="translate(444.76317,-53.344675)">
+    <polygon
+       points="40,179 33,191 47,191 "
+       id="polygon48-7" />
+    <polygon
+       points="40,185 31,194 49,194 "
+       id="polygon49-5" />
+    <rect
+       x="38"
+       y="194"
+       width="4"
+       height="6"
+       id="rect49-3" />
+    <polygon
+       points="55,176 48,188 62,188 "
+       id="polygon50-5" />
+    <polygon
+       points="55,182 46,191 64,191 "
+       id="polygon51-6" />
+    <rect
+       x="53"
+       y="191"
+       width="4"
+       height="6"
+       id="rect51-2" />
+    <polygon
+       points="70,180 63,192 77,192 "
+       id="polygon52-9" />
+    <polygon
+       points="70,186 61,195 79,195 "
+       id="polygon53-1" />
+    <rect
+       x="68"
+       y="195"
+       width="4"
+       height="5"
+       id="rect53-2" />
+    <polygon
+       points="84,177 78,187 90,187 "
+       id="polygon54-7" />
+    <polygon
+       points="84,182 76,190 92,190 "
+       id="polygon55-0" />
+    <rect
+       x="82"
+       y="190"
+       width="4"
+       height="5"
+       id="rect55-9" />
+  </g>
+  <!-- Centre cluster (x 680-740) -->
+  <g
+     fill="#020a12"
+     id="g61">
+    <polygon
+       points="692,171 685,183 699,183"
+       id="polygon56" />
+    <polygon
+       points="692,177 683,186 701,186"
+       id="polygon57" />
+    <rect
+       x="690"
+       y="186"
+       width="4"
+       height="6"
+       id="rect57" />
+    <polygon
+       points="706,168 699,180 713,180"
+       id="polygon58" />
+    <polygon
+       points="706,174 697,183 715,183"
+       id="polygon59" />
+    <rect
+       x="704"
+       y="183"
+       width="4"
+       height="6"
+       id="rect59" />
+    <polygon
+       points="720,172 713,184 727,184"
+       id="polygon60" />
+    <polygon
+       points="720,178 711,187 729,187"
+       id="polygon61" />
+    <rect
+       x="718"
+       y="187"
+       width="4"
+       height="5"
+       id="rect61" />
+  </g>
+  <!-- Right cluster (x 1345-1405) -->
+  <g
+     fill="#020a12"
+     id="g67"
+     transform="translate(-122.11876,-17.468369)">
+    <polygon
+       points="1345,187 1359,187 1352,175 "
+       id="polygon62" />
+    <polygon
+       points="1343,190 1361,190 1352,181 "
+       id="polygon63" />
+    <rect
+       x="1350"
+       y="190"
+       width="4"
+       height="6"
+       id="rect63" />
+    <polygon
+       points="1360,184 1374,184 1367,172 "
+       id="polygon64" />
+    <polygon
+       points="1358,187 1376,187 1367,178 "
+       id="polygon65" />
+    <rect
+       x="1365"
+       y="187"
+       width="4"
+       height="6"
+       id="rect65" />
+    <polygon
+       points="1375,188 1389,188 1382,176 "
+       id="polygon66" />
+    <polygon
+       points="1373,191 1391,191 1382,182 "
+       id="polygon67" />
+    <rect
+       x="1380"
+       y="191"
+       width="4"
+       height="5"
+       id="rect67" />
+  </g>
+  <g
+     fill="#020a12"
+     id="g67-6"
+     transform="translate(-543.7892,-36.96754)">
+    <polygon
+       points="1359,187 1352,175 1345,187 "
+       id="polygon62-0" />
+    <polygon
+       points="1361,190 1352,181 1343,190 "
+       id="polygon63-6" />
+    <rect
+       x="1350"
+       y="190"
+       width="4"
+       height="6"
+       id="rect63-2" />
+    <polygon
+       points="1374,184 1367,172 1360,184 "
+       id="polygon64-6" />
+    <polygon
+       points="1376,187 1367,178 1358,187 "
+       id="polygon65-1" />
+    <rect
+       x="1365"
+       y="187"
+       width="4"
+       height="6"
+       id="rect65-8" />
+    <polygon
+       points="1389,188 1382,176 1375,188 "
+       id="polygon66-7" />
+    <polygon
+       points="1391,191 1382,182 1373,191 "
+       id="polygon67-9" />
+    <rect
+       x="1380"
+       y="191"
+       width="4"
+       height="5"
+       id="rect67-2" />
+  </g>
+  <!-- === ACTIVITY SILHOUETTES (white figures on mountain slopes) === -->
+  <!-- SKIER — descending far left slope (~x=190) -->
+  <!-- MTB BIKER — descending mid section (~x=488) -->
+  <!-- ROCK CLIMBER — on steep face (~x=835) -->
+  <!-- SKI TOURER — ascending with skis on back (~x=1068) -->
+</svg>
