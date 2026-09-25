@@ -1,27 +1,9 @@
-######################
-#### DEPENDENCIES ####
-######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
-
-
 ##############
 #### PAGE ####
 ##############
 page {
     includeCSS {
         theme = EXT:mountain_star_bootstrap_template/Resources/Public/Scss/Theme/theme.scss
-    }
-
-    includeJSLibs {
-
-    }
-
-    includeJS {
-
-    }
-
-    includeJSFooterlibs {
-
     }
 
     includeJSFooter {

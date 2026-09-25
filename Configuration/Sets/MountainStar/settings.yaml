@@ -1,0 +1,30 @@
+page:
+  logo:
+    file: 'EXT:mountain_star_bootstrap_template/Resources/Public/Images/logo.svg'
+    fileInverted: 'EXT:mountain_star_bootstrap_template/Resources/Public/Images/logo-inverted.svg'
+    height: 52
+    width: 192
+    alt: 'Mountain Star Bootstrap Template'
+    linktitle: 'Mountain Star Bootstrap Template'
+  favicon:
+    file: 'EXT:mountain_star_bootstrap_template/Resources/Public/Icons/favicon.ico'
+  fluidtemplate:
+    layoutRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Layouts/Page/'
+    partialRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Partials/Page/'
+    templateRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Templates/Page/'
+
+plugin:
+  bootstrap_package:
+    view:
+      layoutRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Layouts/'
+      partialRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Partials/'
+      templateRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Templates/'
+    settings:
+      scss:
+        primary: '#eb3e4a'
+        secondary: '#013859'
+  bootstrap_package_contentelements:
+    view:
+      layoutRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Layouts/ContentElements/'
+      partialRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Partials/ContentElements/'
+      templateRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Templates/ContentElements/'

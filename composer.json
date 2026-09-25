@@ -1,12 +1,13 @@
 {
     "name": "mountain-star/mountain-star-bootstrap-template",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "Mountain Star Bootstrap Template - Site package for mtnstar.net",
     "homepage": "https://mtnstar.net",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
     "require": {
-        "bk2k/bootstrap-package": "^13.0 || ^14.0"
+        "typo3/cms-core": "^14.3",
+        "bk2k/bootstrap-package": "^16.0"
     },
     "autoload": {
         "psr-4": {

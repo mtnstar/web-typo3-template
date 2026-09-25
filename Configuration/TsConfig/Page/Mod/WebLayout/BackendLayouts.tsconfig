@@ -1,4 +1,4 @@
 #
 # BACKENDLAYOUTS
 #
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts" extensions="tsconfig">
+@import 'EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/*.tsconfig'

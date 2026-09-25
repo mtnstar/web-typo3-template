@@ -1,7 +1,7 @@
 #
 # PageTS for Mountain Star Bootstrap Template
 #
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/RTE.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/TCEFORM.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+@import 'EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/RTE.tsconfig'
+@import 'EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+@import 'EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
+@import 'EXT:mountain_star_bootstrap_template/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig'

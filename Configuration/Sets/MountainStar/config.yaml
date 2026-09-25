@@ -1,0 +1,4 @@
+name: mountain-star/template
+label: 'Mountain Star Bootstrap Template'
+dependencies:
+  - bootstrap-package/full
