@@ -12,6 +12,30 @@
             <trans-unit id="backend_layout.column.normal">
                 <source>Normal</source>
             </trans-unit>
+            <trans-unit id="background_color.primary">
+                <source>Blue (primary)</source>
+            </trans-unit>
+            <trans-unit id="background_color.secondary">
+                <source>Night blue (hero)</source>
+            </trans-unit>
+            <trans-unit id="background_color.tertiary">
+                <source>Yellow (tertiary)</source>
+            </trans-unit>
+            <trans-unit id="background_color.quaternary">
+                <source>Deep blue (quaternary)</source>
+            </trans-unit>
+            <trans-unit id="background_color.light">
+                <source>Alternate (slightly lighter)</source>
+            </trans-unit>
+            <trans-unit id="background_color.dark">
+                <source>Night blue (dark)</source>
+            </trans-unit>
+            <trans-unit id="frame_options.ridge_after">
+                <source>Mountain ridge at the bottom</source>
+            </trans-unit>
+            <trans-unit id="subheader_class.eyebrow">
+                <source>Eyebrow (small label above the header)</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

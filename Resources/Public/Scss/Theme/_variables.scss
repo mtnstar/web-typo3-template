@@ -1,11 +1,157 @@
 //
 // Variables
 //
+// Look & feel shared with the mtnSOFT one-pager (see mtnsoft/assets/css/style.css):
+// logo blue + logo yellow, a dark "night" hero, Ubuntu headlines, pill buttons.
+// The whole site uses mtnSOFT's dark color scheme.
+//
 
-$primary: #0a58ca;
+// Brand
+$mtn-blue:       #0055d4;
+$mtn-blue-300:   #6ea8ff; // links/labels: logo blue lifted for contrast on dark
+$mtn-blue-200:   #9cc3ff;
+$mtn-blue-050:   #14263f;
+$mtn-yellow:     #ffcc00;
+$mtn-yellow-400: #ffd733;
+$mtn-night:      #071427;
+
+// Neutrals (dark scheme)
+$mtn-ink:        #eaf0f7;
+$mtn-ink-soft:   #b7c4d3;
+$mtn-muted:      #8d9db0;
+$mtn-bg:         #0b1520;
+$mtn-bg-alt:     #101d2b;
+$mtn-surface:    #12202f;
+$mtn-border:     #23384c;
+$mtn-on-yellow:  #101820; // text on yellow buttons
+
+// Bootstrap theme colors
+// primary   = logo blue (buttons)
+// secondary = night blue (dark hero sections)
+// tertiary  = logo yellow (accents, highlighted words, CTAs on dark)
+// light     = slightly lighter alternating sections
+$primary:    $mtn-blue;
+$secondary:  $mtn-night;
+$tertiary:   $mtn-yellow;
+$quaternary: $mtn-blue-050;
+$default:    $mtn-border;
+$lighter:    $mtn-surface;
+$light:      $mtn-bg-alt;
+$dark:       $mtn-night;
+$darker:     #050f1d;
+
+// Body
+$body-bg:                $mtn-bg;
+$body-color:             $mtn-ink;
+$body-emphasis-color:    #ffffff;
+$body-secondary-color:   $mtn-ink-soft;
+$body-secondary-bg:      $mtn-bg-alt;
+$body-tertiary-color:    $mtn-muted;
+$body-tertiary-bg:       $mtn-surface;
+$border-color:           $mtn-border;
+$text-muted:             $mtn-muted;
+$btn-close-color:        #ffffff;
 
 // Links
-$link-decoration: none;
+$link-color:       $mtn-blue-300;
+$link-hover-color: $mtn-blue-200;
+$link-decoration:  none;
 
-// Headings
-$headings-font-weight: 700;
+// Forms
+$input-bg:                    $mtn-surface;
+$input-color:                 $mtn-ink;
+$input-border-color:          $mtn-border;
+$input-placeholder-color:     $mtn-muted;
+$input-disabled-bg:           $mtn-bg-alt;
+$form-select-indicator-color: $mtn-ink-soft;
+$form-check-input-bg:         $mtn-surface;
+$form-check-input-border:     1px solid rgba(255, 255, 255, .25);
+
+// Accordion
+$accordion-button-active-bg:    $mtn-blue-050;
+$accordion-button-active-color: $mtn-ink;
+
+// bootstrap_package components with light defaults
+$subnav-color:          rgba(255, 255, 255, .6);
+$subnav-hover-color:    rgba(255, 255, 255, .85);
+$timeline-item-bg:      $mtn-surface;
+$timeline-icon-bg:      $mtn-surface;
+$timeline-item-shadow:  0 0 0 1px $mtn-border;
+
+// Typography
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$mtn-font-head:          "Ubuntu", "Ubuntu Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+$line-height-base:       1.7;
+
+$headings-font-family:   $mtn-font-head;
+$headings-font-weight:   700;
+$headings-line-height:   1.15;
+$h1-font-size:           2.75rem;
+$h2-font-size:           2rem;
+$h3-font-size:           1.3rem;
+$lead-font-size:         1.25rem;
+$lead-font-weight:       400;
+
+// Shapes
+$border-radius:    .5rem;
+$border-radius-lg: 14px;
+$box-shadow:       0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px -12px rgba(0, 0, 0, .7);
+
+// Buttons: pill shaped, Ubuntu bold
+$btn-font-family:        $mtn-font-head;
+$btn-font-weight:        700;
+$btn-padding-y:          .65rem;
+$btn-padding-x:          1.5rem;
+$btn-padding-y-lg:       .9rem;
+$btn-padding-x-lg:       2.25rem;
+$btn-border-radius:      50rem;
+$btn-border-radius-sm:   50rem;
+$btn-border-radius-lg:   50rem;
+$btn-border-width:       2px;
+$btn-box-shadow:         none;
+$btn-focus-box-shadow:   none;
+
+// Cards
+$card-bg:                $mtn-surface;
+$card-cap-bg:            rgba(255, 255, 255, .03);
+$card-border-color:      $mtn-border;
+$card-border-radius:     $border-radius-lg;
+$card-spacer-y:          2rem;
+$card-spacer-x:          1.75rem;
+$card-title-size:        1.3rem;
+
+// Navbar (height of the sticky header)
+$navbar-heights: (
+    xs: 64px,
+    sm: 64px,
+    md: 72px,
+    lg: 80px,
+    xl: 80px,
+    xxl: 80px
+);
+
+// Breadcrumb
+$breadcrumb-bg: $mtn-bg-alt;
+
+// Frame backgrounds (content element "Background color")
+// Dark frames get yellow links, like the mtnSOFT hero.
+$frame-backgrounds: (
+    'secondary': (
+        'background':       $mtn-night,
+        'color':            #c8d6e8,
+        'link-color':       $mtn-yellow,
+        'link-hover-color': $mtn-yellow-400
+    ),
+    'dark': (
+        'background':       $mtn-night,
+        'color':            #c8d6e8,
+        'link-color':       $mtn-yellow,
+        'link-hover-color': $mtn-yellow-400
+    ),
+    'light': (
+        'background':       $mtn-bg-alt,
+        'color':            $mtn-ink,
+        'link-color':       $mtn-blue-300,
+        'link-hover-color': $mtn-blue-200
+    )
+);

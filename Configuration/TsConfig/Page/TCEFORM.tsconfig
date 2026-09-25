@@ -6,6 +6,28 @@ TCEFORM {
 
     }
     tt_content {
-
+        # Names of the background colors as defined in Resources/Public/Scss/Theme/_variables.scss
+        background_color_class {
+            altLabels {
+                primary = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:background_color.primary
+                secondary = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:background_color.secondary
+                tertiary = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:background_color.tertiary
+                quaternary = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:background_color.quaternary
+                light = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:background_color.light
+                dark = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:background_color.dark
+            }
+        }
+        # Jagged mountain skyline at the bottom edge of a frame
+        frame_options {
+            addItems {
+                ridge-after = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:frame_options.ridge_after
+            }
+        }
+        # Small uppercase label shown above the header
+        subheader_class {
+            addItems {
+                eyebrow = LLL:EXT:mountain_star_bootstrap_template/Resources/Private/Language/locallang_be.xlf:subheader_class.eyebrow
+            }
+        }
     }
 }

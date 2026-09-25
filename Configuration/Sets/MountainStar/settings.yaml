@@ -6,6 +6,20 @@ page:
     width: 192
     alt: 'Mountain Star Bootstrap Template'
     linktitle: 'Mountain Star Bootstrap Template'
+  theme:
+    # Ubuntu = headline font of the mtnSOFT site. bootstrap_package downloads it once and
+    # serves it from typo3temp/, so visitors never connect to Google.
+    googleFont:
+      font: 'Ubuntu'
+      weight: '400,500,700'
+    # sticky, dark header (light toggler icon, dark dropdowns)
+    navigation:
+      type: 'top'
+      style: 'inverse'
+    # The site sets no cookies, so there is nothing to consent to. Disabling this also
+    # drops the banner's JS, which itself set the cookieconsent_status cookie.
+    cookieconsent:
+      enable: false
   favicon:
     file: 'EXT:mountain_star_bootstrap_template/Resources/Public/Icons/favicon.ico'
   fluidtemplate:
@@ -21,8 +35,9 @@ plugin:
       templateRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Templates/'
     settings:
       scss:
-        primary: '#eb3e4a'
-        secondary: '#013859'
+        # Colors are set in Resources/Public/Scss/Theme/_variables.scss, which overrides these
+        primary: '#0055d4'
+        secondary: '#071427'
   bootstrap_package_contentelements:
     view:
       layoutRootPath: 'EXT:mountain_star_bootstrap_template/Resources/Private/Layouts/ContentElements/'

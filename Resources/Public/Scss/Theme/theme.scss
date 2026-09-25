@@ -9,10 +9,420 @@
 @import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
 
 //
-// Custom Footer
+// Base
+//
+:root {
+    color-scheme: dark;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+    letter-spacing: -.02em;
+}
+h1, .h1 {
+    font-size: unquote("clamp(2.25rem, 1.6rem + 3vw, 3.5rem)");
+}
+h2, .h2 {
+    font-size: unquote("clamp(1.5rem, 1.3rem + 1vw, 2rem)");
+}
+
+a {
+    text-underline-offset: 3px;
+}
+
+.lead {
+    color: $mtn-ink-soft;
+}
+
+:focus-visible {
+    outline: 3px solid $mtn-yellow;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+//
+// Header / main navigation
+//
+.navbar-mainnavigation {
+    --mainnavigation-hightlight: #{$mtn-yellow};
+    --mainnavigation-link-font-size: .975rem;
+    box-shadow: none;
+    border-bottom: 1px solid $mtn-border;
+
+    &.navbar-default,
+    &.navbar-inverse {
+        // bootstrap_package @extends .bg-white / .bg-dark, which are !important
+        background-color: rgba(11, 21, 32, .86) !important;
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-nav .nav-link {
+        color: $mtn-ink-soft;
+        font-weight: 500;
+        transition: color .15s ease;
+
+        &:hover,
+        &:focus-visible,
+        &.active,
+        &.show {
+            color: $mtn-ink;
+        }
+    }
+
+    .nav-link.active:before,
+    .nav-link.show:before {
+        opacity: 1 !important;
+    }
+}
+
+//
+// Buttons
+//
+.btn {
+    transition: transform .15s ease, color .15s ease, background-color .15s ease, border-color .15s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+    &:active {
+        transform: translateY(0);
+    }
+}
+.btn-tertiary {
+    --#{$prefix}btn-color: #{$mtn-on-yellow};
+    --#{$prefix}btn-hover-color: #{$mtn-on-yellow};
+    --#{$prefix}btn-active-color: #{$mtn-on-yellow};
+    --#{$prefix}btn-hover-bg: #{$mtn-yellow-400};
+    --#{$prefix}btn-hover-border-color: #{$mtn-yellow-400};
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn:hover {
+        transform: none;
+    }
+}
+
+//
+// Eyebrow: small caps label above a headline.
+// Editors pick "Eyebrow" as subheader layout; it is moved above the header.
+//
+.eyebrow {
+    order: -1;
+    font-family: $mtn-font-head;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: $mtn-blue-300;
+    margin-bottom: .75rem;
+}
+.frame-header:has(> .eyebrow) {
+    display: flex;
+    flex-direction: column;
+}
+
+//
+// Frames: dark "night" sections, like the mtnSOFT hero
+//
+.frame-background-secondary,
+.frame-background-dark {
+    --frame-background:
+        radial-gradient(1100px 500px at 78% -10%, rgba(0, 85, 212, .45), transparent 60%),
+        linear-gradient(168deg, #0a1b33 0%, #{$mtn-night} 62%, #050f1d 100%);
+
+    // body text comes from $frame-backgrounds, headlines are white
+    --#{$prefix}heading-color: #ffffff;
+
+    .lead {
+        color: inherit;
+    }
+    .eyebrow {
+        color: $mtn-yellow;
+        letter-spacing: .18em;
+    }
+
+    // Primary buttons turn yellow on dark ground
+    .btn-primary {
+        --#{$prefix}btn-color: #{$mtn-on-yellow};
+        --#{$prefix}btn-bg: #{$mtn-yellow};
+        --#{$prefix}btn-border-color: #{$mtn-yellow};
+        --#{$prefix}btn-hover-color: #{$mtn-on-yellow};
+        --#{$prefix}btn-hover-bg: #{$mtn-yellow-400};
+        --#{$prefix}btn-hover-border-color: #{$mtn-yellow-400};
+        --#{$prefix}btn-active-color: #{$mtn-on-yellow};
+        --#{$prefix}btn-active-bg: #{$mtn-yellow};
+        --#{$prefix}btn-active-border-color: #{$mtn-yellow};
+    }
+    // Outline buttons as "ghost" buttons
+    [class*="btn-outline-"] {
+        --#{$prefix}btn-color: #ffffff;
+        --#{$prefix}btn-border-color: rgba(255, 255, 255, .35);
+        --#{$prefix}btn-hover-color: #ffffff;
+        --#{$prefix}btn-hover-bg: transparent;
+        --#{$prefix}btn-hover-border-color: #ffffff;
+        --#{$prefix}btn-active-color: #ffffff;
+        --#{$prefix}btn-active-bg: transparent;
+        --#{$prefix}btn-active-border-color: #ffffff;
+    }
+}
+
+.frame-background-light {
+    border-block: 1px solid $mtn-border;
+}
+
+//
+// Frame option "Mountain ridge": jagged skyline at the bottom edge of a frame.
+// The ridge takes the page background; set --mtn-ridge-color when the next
+// section has a different one.
+//
+$mtn-ridge: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath d='M0,120 L0,74 L120,42 L210,76 L330,20 L440,80 L525,54 L645,98 L765,32 L885,86 L1005,48 L1125,92 L1245,36 L1345,76 L1440,52 L1440,120 Z'/%3E%3C/svg%3E";
+
+.frame-option-ridge-after {
+    --mtn-ridge-color: #{$body-bg};
+    --mtn-ridge-height: #{unquote("clamp(48px, 8vw, 110px)")};
+    padding-bottom: calc(var(--frame-spacing) + var(--mtn-ridge-height));
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: var(--mtn-ridge-height);
+        background: var(--mtn-ridge-color);
+        -webkit-mask: url("#{$mtn-ridge}") center / 100% 100% no-repeat;
+        mask: url("#{$mtn-ridge}") center / 100% 100% no-repeat;
+        pointer-events: none;
+    }
+    + .frame-background-light {
+        border-top: 0;
+    }
+}
+.frame-option-ridge-after:has(+ .frame-background-light) {
+    --mtn-ridge-color: #{$mtn-bg-alt};
+}
+
+//
+// Lists: yellow summit triangles instead of bullets
+//
+.frame-type-text,
+.frame-type-textpic,
+.frame-type-textmedia,
+.frame-type-textcolumn,
+.card-body {
+    ul:not([class]) {
+        list-style: none;
+        padding-left: 0;
+
+        > li {
+            position: relative;
+            padding-left: 1.4rem;
+            margin-bottom: .5rem;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: .62em;
+                width: 8px;
+                height: 8px;
+                clip-path: polygon(50% 0, 100% 100%, 0 100%);
+                background: $mtn-yellow;
+            }
+        }
+    }
+}
+
+//
+// Cards
+//
+.card {
+    --#{$prefix}heading-color: inherit;
+    position: relative;
+    overflow: hidden;
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+
+    // blue/yellow bar on hover
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 4px;
+        background: linear-gradient(90deg, $mtn-blue 0 55%, $mtn-yellow 55% 100%);
+        opacity: 0;
+        transition: opacity .18s ease;
+        z-index: 1;
+    }
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $box-shadow;
+        border-color: mix($mtn-blue, $mtn-border, 35%);
+
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+.card-body {
+    color: $mtn-ink-soft;
+}
+.card-title {
+    color: $mtn-ink;
+}
+.card-footer {
+    background: transparent;
+    border-top: 0;
+    padding-top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card:hover {
+        transform: none;
+    }
+}
+
+//
+// Text & icon: rounded, light blue tiles
+//
+.texticon-type-square .texticon-inner-icon {
+    border-radius: 11px;
+}
+
+//
+// Hardcoded light-scheme borders/backgrounds in bootstrap_package and EXT:blog
+//
+.frame-option-ruler-before {
+    border-top-color: $mtn-border;
+}
+.frame-option-ruler-after {
+    border-bottom-color: $mtn-border;
+}
+blockquote,
+.blockquote {
+    border-left-color: $mtn-border;
+}
+.well {
+    background-color: rgba(255, 255, 255, .04);
+}
+.postauthor + .postauthor,
+.postcomment + .postcomment {
+    border-top-color: $mtn-border;
+}
+
+//
+// Blog: post titles are long sentences, keep them smaller than page headlines
+//
+.postheader__title,
+.blogarchiveheader__title {
+    font-size: unquote("clamp(1.75rem, 1.45rem + 1.2vw, 2.25rem)");
+}
+.postlist__posttitle {
+    font-size: unquote("clamp(1.3rem, 1.2rem + .5vw, 1.6rem)");
+}
+
+//
+// Blog index: featured images with rounded top corners
+//
+.postlist__featuredimage {
+    display: block;
+
+    .blogimage {
+        margin-bottom: 1rem;
+        border-radius: $border-radius-lg $border-radius-lg 0 0;
+        overflow: hidden;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+//
+// Blog tags: pills like the tech-stack tags on mtnSOFT
+//
+%mtn-tag {
+    display: inline-block;
+    padding: .3rem .85rem;
+    border: 1px solid $mtn-border;
+    border-radius: 50rem;
+    background: $mtn-surface;
+    color: $mtn-ink-soft;
+    font-size: .8375rem !important; // tag widget sets a per-tag inline font-size
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+
+    &:hover,
+    &:focus-visible {
+        color: $mtn-ink;
+        border-color: $mtn-blue-300;
+        text-decoration: none;
+    }
+}
+// two classes, so it wins over EXT:blog's .blogbadge regardless of CSS order
+.blogwidgetlist--tags .blogbadge {
+    @extend %mtn-tag;
+}
+.blogwidgetlist--tags .blogwidgetlist__item--active .blogbadge {
+    color: $mtn-ink;
+    border-color: $mtn-blue-300;
+    background: $mtn-blue-050;
+}
+.postmetagroup__item--tags {
+    .postmetagroup__list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: .4rem;
+    }
+    .postmetagroup__list li:not(:last-child):after {
+        content: none;
+    }
+    .postmetagroup__listtext a {
+        @extend %mtn-tag;
+    }
+}
+
+//
+// Blog pagination: same pills as the tags
+//
+.blogpagination .blogpagination__list {
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+.blogpagination .blogpagination__link {
+    @extend %mtn-tag;
+    min-width: 2.4rem;
+    margin-left: 0;
+    padding: .45rem .95rem;
+    text-align: center;
+    font-size: .9rem !important;
+}
+.blogpagination .blogpagination__item--active .blogpagination__link {
+    color: $mtn-ink;
+    border-color: $mtn-blue-300;
+    background: $mtn-blue-050;
+}
+.blogpagination .blogpagination__item--ellipsis .blogpagination__link {
+    border-color: transparent;
+    background: transparent;
+    min-width: 0;
+    padding-inline: .25rem;
+}
+
+//
+// Footer: a single "made with love" line
 //
 .bp-page-footer {
-    background: #010912;
+    background: $mtn-night;
+    border-top: 1px solid $mtn-border;
     padding: 0;
 
     // Hide any empty footer-section-content spacing
@@ -21,31 +431,18 @@
     }
 }
 
-.mtn-footer-scene {
-    position: relative;
-    display: block;
-    line-height: 0;
+.mtn-footer {
+    padding-block: 1.75rem;
+    text-align: center;
+}
 
-    .mtn-footer-mountains {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+.mtn-footer-credit {
+    margin: 0;
+    color: $mtn-muted;
+    font-size: .85rem;
+    letter-spacing: .1em;
+}
 
-    .mtn-footer-credit {
-        position: absolute;
-        bottom: 0.9rem;
-        left: 0;
-        right: 0;
-        text-align: center;
-        color: rgba(255, 255, 255, 0.72);
-        font-size: 0.8rem;
-        letter-spacing: 0.1em;
-        line-height: 1;
-        margin: 0;
-    }
-
-    .mtn-footer-heart {
-        color: $primary;
-    }
+.mtn-footer-heart {
+    color: $mtn-yellow;
 }
